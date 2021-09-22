@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  warehouse:
+    image: postgres:13-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: warehouse
+    volumes:
+      - ./warehouse/init.sql:/docker-entrypoint-initdb.d/init.sql

@@ -1,0 +1,10 @@
+# Environment
+env/
+
+# Static files
+data/
+temp/
+
+# Mac
+.DS_Store
+
